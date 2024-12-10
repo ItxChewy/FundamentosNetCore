@@ -26,6 +26,16 @@ namespace FundamentosNetCore
             //STRING A PRIMITIVO
             string textoNumero = "12345";
             int numero = int.Parse(textoNumero);
+
+            //CASTING PRIMITIVOS
+            int grande = 88;
+            short enano = (short)mayor;
+
+            //CUALQUIER OBJETO A STRING
+            int number = 88;
+            string texto = number.ToString();
+            texto = btnPulsar.ToString();
+
             
            
            
