@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,15 @@ namespace ProyectoClases
     {
         public Persona()
         {
+            Debug.WriteLine("Constructor vacío Persona");
             this.Domicilio = new Direccion();
+        }
+
+        public Persona(string nombre, string apellido) 
+        {
+            Debug.WriteLine("Constructor PERSONA 2 parámetros");
+            this.Nombre = nombre;
+            this.Apellidos = apellido;
         }
         #region PROPIEDADES
 
